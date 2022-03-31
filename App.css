@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.first_con {
+  background-image: radial-gradient('black', 'white', 'black');
+  background-size: cover;
+  height: cover;
+}
+.primary-Con {
+  background-image: radial-gradient(#9ba9eb, #c3caea);
+  background-size: cover;
+  margin: 0px;
+}
+.image_logo_ele {
+  height: 100px;
+  width: 260px;
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.first_Con {
+  background-color: #5763a5;
+  margin-left: 50px;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: black;
+  width: 80%;
+  padding-bottom: 20px;
+}
+.formCon {
+  padding-right: 20px;
+}
+.form {
+  background-color: #454f84;
+  border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+}
+.nameCon {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.nameImgCon {
+  background-color: white;
+  border-radius: 0px;
+  text-align: center;
+}
+.web {
+  height: 20px;
+  width: 20px;
+}
+.textname {
+  padding-left: 10px;
+}
+.img-1 {
+  height: 400px;
+  width: 500px;
+  margin-top: 20px;
+  margin-left: 300px;
+}
+
+.secondary-con {
+  background-color: #5763a5;
+  margin-left: 50px;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 20px;
+  box-shadow: black;
+  width: 80%;
+  padding-bottom: 20px;
+}
+.passwordCountSearchCon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.conCon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.button {
+  padding-left: 200px;
+}
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+.noPass {
+  padding-left: 500px;
+  padding-top: 20px;
+  color: white;
+  font-weight: bolder;
+}

@@ -1,0 +1,27 @@
+.eachListCon {
+  border-radius: 5px;
+  border-width: 0.5px;
+  border-color: white;
+  margin: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+}
+.intialName {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  color: white;
+  background-color: green;
+  text-align: center;
+  margin-right: 7px;
+  background-size: cover;
+}
+.mailFirst {
+  font-size: 30px;
+}
+.starImg {
+  height: 10px;
+  width: 100%;
+}
