@@ -9,11 +9,21 @@ class App extends Component {
     container: [],
     password: '',
     mail: '',
-    onChangeStar: false,
+    onChangeStar: true,
+    searching: '',
   }
 
   changeUserName = event => {
     this.setState({userName: event.target.value})
+  }
+
+  onDeleting = uuid => {
+    const {container} = this.state
+
+    const deletinResults = container.filter(each => each.id !== uuid)
+    this.setState({
+      container: deletinResults,
+    })
   }
 
   onchangePass = event => {
@@ -48,8 +58,22 @@ class App extends Component {
     }))
   }
 
+  onSearchInput = event => {
+    this.setState({searching: event.target.value})
+  }
+
   render() {
-    const {container, userName, password, mail, onChangeStar} = this.state
+    const {
+      container,
+      userName,
+      password,
+      mail,
+      onChangeStar,
+      searching,
+    } = this.state
+    const searchingRender = container.filter(eachSearch =>
+      eachSearch.mail.includes(searching),
+    )
     return (
       <div className="primary-Con">
         <img
@@ -133,11 +157,16 @@ class App extends Component {
             </h1>
             <div>
               <div className="nameImgCon">
-                <img
-                  src="https://assets.ccbp.in/frontend/react-js/password-manager-search-img.png"
-                  alt="web logo"
-                  className="web"
-                />
+                <div className="bothImgIn">
+                  <img
+                    src="https://assets.ccbp.in/frontend/react-js/password-manager-search-img.png"
+                    alt="web logo"
+                    className="web"
+                  />
+                </div>
+                <div>
+                  <input type="search" onChange={this.onSearchInput} />
+                </div>
               </div>
             </div>
           </div>
@@ -161,13 +190,16 @@ class App extends Component {
                 <p className="noPass">no passwords</p>
               </div>
             ) : (
-              container.map(eachList => (
-                <ContainerElement
-                  eachDetails={eachList}
-                  key={eachList.id}
-                  onclickchangeStar={onChangeStar}
-                />
-              ))
+              <ul className="ulCon">
+                {searchingRender.map(eachList => (
+                  <ContainerElement
+                    eachDetails={eachList}
+                    key={eachList.id}
+                    onclickchangeStar={onChangeStar}
+                    onDeleting={this.onDeleting}
+                  />
+                ))}
+              </ul>
             )}
           </div>
         </div>

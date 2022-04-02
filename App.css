@@ -108,3 +108,17 @@ body {
   color: white;
   font-weight: bolder;
 }
+.ulCon {
+  border-radius: 5px;
+  background-color: transparent;
+  background-size: cover;
+  padding: 10px;
+  border-width: 0.5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.bothImgIn {
+  display: flex;
+  flex-direction: row;
+}

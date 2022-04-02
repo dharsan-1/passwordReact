@@ -7,21 +7,32 @@
   display: flex;
   flex-direction: row;
   background-color: transparent;
+  background-size: cover;
 }
 .intialName {
-  height: 50px;
-  width: 50px;
+  height: 35px;
   border-radius: 50px;
   color: white;
   background-color: green;
   text-align: center;
   margin-right: 7px;
   background-size: cover;
+  padding: 5px;
 }
 .mailFirst {
   font-size: 30px;
+  background-color: green;
+  border-radius: 50px;
+  padding: 15px;
+  color: white;
+  margin-right: 15px;
 }
 .starImg {
   height: 10px;
   width: 100%;
+}
+.deleteImg {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
 }
